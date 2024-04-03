@@ -150,13 +150,22 @@
             <img src="images/2.2_high_constant.png" align="middle" width="400vw">
             <figcaption>High stiffness</figcaption>
           </td>
-          <td>
-            <img src="images/2.3_low_stiffness.png" align="middle" width="400vw">
-            <figcaption>Low stiffness</figcaption>
-          </td>
+
+        </tr>
+      </tbody></table>
+    </div>
+
+    <div align="middle">
+      <table style="width:100%">
+        <tbody><tr align="center">
+
           <td>
             <img src="images/2.4_high_density.png" align="middle" width="400vw">
             <figcaption>High density</figcaption>
+          </td>
+          <td>
+            <img src="images/2.3_low_stiffness.png" align="middle" width="400vw">
+            <figcaption>Low stiffness</figcaption>
           </td>
 
         </tr>
@@ -193,17 +202,17 @@
         <tbody><tr align="center">
  
           <td>
-            <img src="images/3.4_ks_500_normal.png" align="middle" width="400vw">
+            <img src="images/3.4_ks_500_normal.png" align="middle" width="333vw">
             <figcaption>ks = 500</figcaption>
           </td>  
           
           <td>
-            <img src="images/3.2_ks_5000_normal.png" align="middle" width="400vw">
+            <img src="images/3.2_ks_5000_normal.png" align="middle" width="333vw">
             <figcaption>ks = 5,000</figcaption>
           </td>  
 
           <td>
-            <img src="images/3.6_ks_50000_normal.png" align="middle" width="400vw">
+            <img src="images/3.6_ks_50000_normal.png" align="middle" width="333vw">
             <figcaption>ks = 50,000</figcaption>
           </td>  
         </tr>
@@ -228,7 +237,7 @@
     </b></blockquote>
 
     <div align="middle">
-      <img src="./images/3.7_plane.png" align="middle" width="100%">
+      <img src="./images/3.7_plane.png" align="middle" width="75%">
     </div>
 
 
@@ -358,7 +367,7 @@ Shaders are programs which run on the GPU. The vertex shader is a program which 
     </b></blockquote>
 
     <div align="middle">
-      <img src="images/5.5_texture.png" align="middle" width="100%">
+      <img src="images/5.5_texture.png" align="middle" width="75%">
     </div>
 
 
@@ -383,17 +392,21 @@ Shaders are programs which run on the GPU. The vertex shader is a program which 
             <img src="images/5.8_bump_o_128.png" align="middle" width="400vw">
             <figcaption>Bump Mapping on the Sphere</figcaption>
           </td>
-          <td>
-        </td></tr>
-        <tr align="center">
-          <td>
-            <img src="images/5.9_displacement_mapping_bug_art.png" align="middle" width="400vw">
-            <figcaption>Displacement Mapping Bug Art: Undefined Behavior</figcaption>
-          </td>
-        </tr>
       </tbody></table>
     </div>
 
+
+    <div align="middle">
+      <table style="width:100%">
+        <tbody><tr align="center">
+          
+              <td>
+                <img src="images/5.9_displacement_mapping_bug_art.png" align="middle" width="400vw">
+                <figcaption>Displacement Mapping Bug Art: Undefined Behavior</figcaption>
+              </td>
+
+      </tbody></table>
+    </div>
     <p>
       Bump mapping and displacement mapping are both techniques that give the appearance of changing the macroscopic roughness of a material’s surface. Both change how the shading on an object appears but it is only displacement mapping which actually changes the vertex positions, or the global position of the original geometry which the mapping is applied to. Unfortunately displacement mapping couldn’t be successfully implemented on my machine; my implementation couldn’t be made to work on my machine, or nor could TAs get my code to run on their machines. Understanding what bump mapping and displacement mapping do, we know that bump mapping has no effect on the underlying geometric data of a mesh, this changing the coarseness of a sphere has little observable effect on appearance of the fragments making up its surface. However displacement mapping translates the positions of each vertex, thus changing the resolution of a mesh would yield visually distinct results, with a coarser mesh being more jaggy and a higher resolution being smoother.
 
